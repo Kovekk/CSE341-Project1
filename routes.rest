@@ -1,0 +1,15 @@
+// Localhost
+
+### get all contacts
+GET http://localhost:3000/contacts
+
+### get one contact
+GET http://localhost:3000/contacts/666c8a5b145e6333c1bd0f76
+
+// Production
+
+### get all contacts
+GET https://cse341-project1-x5t9.onrender.com/contacts
+
+### get single contact
+GET https://cse341-project1-x5t9.onrender.com/contacts/666c8a5b145e6333c1bd0f76
