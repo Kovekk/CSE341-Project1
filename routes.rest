@@ -1,10 +1,37 @@
 // Localhost
 
 ### get all contacts
-GET http://localhost:3000/contacts
+GET http://localhost:8080/contacts
 
 ### get one contact
-GET http://localhost:3000/contacts/666c8a5b145e6333c1bd0f76
+GET http://localhost:8080/contacts/6673b31b21ee5e9719c7a4cf
+
+### Create contact
+POST http://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"jj",
+    "lastName":"Harison",
+    "email":"fred.harison@test.com",
+    "favoriteColor":"pink",
+    "birthday":"06/19/2000"
+}
+
+### Update contact
+PUT http://localhost:8080/contacts/6673b31b21ee5e9719c7a4cf HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Fredrick",
+    "lastName":"Harison",
+    "email":"fred.harison@test.com",
+    "favoriteColor":"pink",
+    "birthday":"06/19/2000"
+}
+
+### Delete contact
+Delete http://localhost:8080/contacts/6673b31b21ee5e9719c7a4cf HTTP/1.1
 
 // Production
 
@@ -13,3 +40,30 @@ GET https://cse341-project1-x5t9.onrender.com/contacts
 
 ### get single contact
 GET https://cse341-project1-x5t9.onrender.com/contacts/666c8a5b145e6333c1bd0f76
+
+### Create contact
+POST https://cse341-project1-x5t9.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"jj",
+    "lastName":"Harison",
+    "email":"fred.harison@test.com",
+    "favoriteColor":"pink",
+    "birthday":"06/19/2000"
+}
+
+### Update contact
+PUT https://cse341-project1-x5t9.onrender.com/6673b31b21ee5e9719c7a4cf HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Fredrick",
+    "lastName":"Harison",
+    "email":"fred.harison@test.com",
+    "favoriteColor":"pink",
+    "birthday":"06/19/2000"
+}
+
+### Delete contact
+Delete https://cse341-project1-x5t9.onrender.com/6673b31b21ee5e9719c7a4cf HTTP/1.1
