@@ -5,7 +5,7 @@ const doc = {
     title: 'Contacts API',
     description: 'Create, update, get, and delete contact data through this API.'
   },
-  host: 'https://cse341-project1-x5t9.onrender.com'
+  host: 'cse341-project1-x5t9.onrender.com'
 };
 
 const outputFile = './swagger-output.json';
